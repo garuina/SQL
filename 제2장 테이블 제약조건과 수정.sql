@@ -72,8 +72,15 @@ insert into `User5` set `name` = '김유신';
 insert into `User5` set `name` ='김춘추' , `addr` = '부산시';
 
 #실습 2-9
+
+
 #실습 2-10
+
 #실습 2-11
+alter table `User5` add `hp` varchar(20);
+alter table `User5` add `birth` default '0000-00-00' after `name`;
+alter table `User5` add `uid` varchar(10) first;
+
 #실습 2-12
 #실습 2-13
 #실습 2-14
