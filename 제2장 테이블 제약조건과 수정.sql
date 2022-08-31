@@ -78,11 +78,18 @@ insert into `User5` set `name` ='김춘추' , `addr` = '부산시';
 
 #실습 2-11
 alter table `User5` add `hp` varchar(20);
-alter table `User5` add `birth` default '0000-00-00' after `name`;
+alter table `User5` add `birth` char(10) Default '0000-00-00' after `name`;
 alter table `User5` add `uid` varchar(10) first;
 
 #실습 2-12
+alter table `User5` modify `hp` char(13);
+alter table `User5` modify `age` tinyint;
+
 #실습 2-13
 #실습 2-14
+
 #실습 2-15
+create table `User6` like `User5`;
+
 #실습 2-16
+insert into `User6` select * from `User5`;
